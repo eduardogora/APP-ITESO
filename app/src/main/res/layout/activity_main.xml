@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/gama8"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:text="High Score:"
+        android:textSize="30dp"
+        android:gravity="left"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textColor="@color/FFFFFF"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        />
+
+    <TextView
+
+        android:id="@+id/txt_2048"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2048"
+        android:textSize="80dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+
+        app:layout_editor_absoluteX="-16dp"
+
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+
+        android:textColor="@color/gama2"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Juego creado por:"
+        android:textColor="@color/FFFFFF"
+
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eduardo Gonzalez"
+        android:gravity="center"
+        android:textColor="@color/FFFFFF"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+
+        />
+
+    <Button
+
+        android:id="@+id/btn_inicio"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gama2"
+
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="PLAY"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/txt_2048"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <TextView
+        android:layout_width="167dp"
+        android:layout_height="296dp"
+        android:layout_marginStart="120dp"
+
+        android:text="   \n
+              |'  -.--._ _________:    \n
+              |    /    |  __    __    |   \n
+              |   |  _  | [|_|= [|_|   |   \n
+              |   |.' '. |.........         |   \n
+              |   ( &lt;)  ||:       :|_   / \n
+              |   '._.' | :.....:   |_(o    \n
+              '-  |_   | .------.  /      \n
+            _   |      ||.---.|  |  _     \n
+            / |  '-._|/|-~~|-' | |    \n
+            (| []=.--[===[()]===[) |   \n
+            &lt;|_/  |_______/ _.' /_/    \n
+            ///            (_/_/   \n
+            | \\            [||     \n
+            ||:|           | I|    \n
+            |::|           | I|    \n
+            ||:|           | I|    \n
+            ||:|           : |:    \n
+            ||:|            |I|    \n
+            :||:            ([])   \n
+            ([])             [|    \n
+            ||              ||_   \n
+            _/_|_            [ -'-.__  \n
+            &lt;]   \&gt;            |_____.&gt; \n
+           |__/"
+        android:textColor="@color/FFFFFF"
+
+        android:textSize="9dp"
+
+        app:layout_constraintStart_toStartOf="@+id/txt_2048"
+        app:layout_constraintTop_toBottomOf="@id/txt_2048" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
